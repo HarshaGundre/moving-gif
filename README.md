@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>moving video</title>
+    <style>
+     body {
+            background-color: lightblue; 
+        }
+
+        @keyframes move {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(100vw);
+            }
+        }
+        .moving-gif1 {
+            position: absolute;
+            top: 100px; 
+            left: -50px;
+            animation: move 10s infinite linear;
+        }
+        .moving-gif2 {
+            position: absolute;
+            top: 100px; 
+            left:-300px;
+            animation: move 10s infinite linear;
+        }
+        .moving-gif3 {
+            position: absolute;
+            top: 100px; 
+            left:-500px;
+            animation: move 10s infinite linear;
+        }
+        .moving-gif4 {
+            position: absolute;
+            top: 100px; 
+            left:-700px;
+            animation: move 10s infinite linear;
+        }
+    </style>
+</head>
+<body>
+    <background-img  src=
+    <h1>GIFs Moving Left to Right</h1>
+    <img class="moving-gif1" src="C:\Users\sai\Downloads\dogrunning.gif" width="300" height="300" alt="Moving Dog">
+    <img class="moving-gif2" src="C:\Users\sai\Downloads\cheetah run.gif" width="300" height="300" alt="Moving cheetah">
+    <img class="moving-gif3" src="C:\Users\sai\Downloads\lion running.gif" width="300" height="300" alt="Moving lion">
+    <img class="moving-gif4" src="C:\Users\sai\Downloads\tiger running.gif" width="300" height="300" alt="Moving tiger">
+    
+</body>
+</html>
