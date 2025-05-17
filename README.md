@@ -2,53 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>moving video</title>
+    <title>Moving Video</title>
     <style>
-     body {
-            background-color: lightblue; 
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi44cDwbgAOfERYg22Yj0VMepevDFiq8bWsw&s");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            overflow: hidden;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            padding-top: 20px;
         }
 
         @keyframes move {
             0% {
-                transform: translateX(0);
+                transform: translateX(-100%);
             }
             100% {
                 transform: translateX(100vw);
             }
         }
-        .moving-gif1 {
+
+        .moving-gif {
             position: absolute;
-            top: 100px; 
-            left: -50px;
             animation: move 10s infinite linear;
         }
-        .moving-gif2 {
-            position: absolute;
-            top: 100px; 
-            left:-300px;
-            animation: move 10s infinite linear;
+
+        .moving-gif.cheetah {
+            top: 300px;
         }
-        .moving-gif3 {
-            position: absolute;
-            top: 100px; 
-            left:-500px;
-            animation: move 10s infinite linear;
+
+        .moving-gif.lion {
+            top: 250px;
+            animation-delay: 3s;
+            left:-200px;
         }
-        .moving-gif4 {
-            position: absolute;
-            top: 100px; 
-            left:-700px;
-            animation: move 10s infinite linear;
+
+        .moving-gif.tiger {
+            top: 200px;
+            animation-delay: 2s;
+            left:-100px;
         }
     </style>
 </head>
 <body>
-    <background-img  src=
     <h1>GIFs Moving Left to Right</h1>
-    <img class="moving-gif1" src="C:\Users\sai\Downloads\dogrunning.gif" width="300" height="300" alt="Moving Dog">
-    <img class="moving-gif2" src="C:\Users\sai\Downloads\cheetah run.gif" width="300" height="300" alt="Moving cheetah">
-    <img class="moving-gif3" src="C:\Users\sai\Downloads\lion running.gif" width="300" height="300" alt="Moving lion">
-    <img class="moving-gif4" src="C:\Users\sai\Downloads\tiger running.gif" width="300" height="300" alt="Moving tiger">
-    
+    <img class="moving-gif cheetah" src="cheetah run.gif" width="300" height="300" alt="Moving cheetah">
+    <img class="moving-gif lion" src="lion running.gif" width="300" height="300" alt="Moving lion">
+    <img class="moving-gif tiger" src="tiger running.gif" width="300" height="300" alt="Moving tiger">
 </body>
 </html>
